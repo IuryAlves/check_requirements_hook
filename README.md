@@ -1,6 +1,6 @@
 # check_requirements_hook
 
-A simple hook to check in after a `git pull` if your pip requirements are up to date.
+A simple hook to check  after a `git pull` if your pip requirements are up to date.
 
 
 ## Installing
