@@ -1,3 +1,10 @@
 # check_requirements_hook
 
-teste
+A simple hook to check in after a `git pull` if your pip requirements are up to date.
+
+
+## Installing
+
+Copy the script to .git/hooks/post-merge
+
+	cp check_requirements_hook.py .git/hooks/post-merge 
