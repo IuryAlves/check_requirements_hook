@@ -17,7 +17,7 @@ def _create_parser():
     return parser
 
 
-def open_requirements(requirements_file):
+def read_requirements(requirements_file):
     with open(requirements_file) as requirements:
         return requirements.readlines()
 
@@ -36,7 +36,7 @@ def main():
 
     parser = _create_parser()
     args = parser.parse_args()
-    dependencies = open_requirements(args.requirements_file)
+    dependencies = read_requirements(args.requirements_file)
     try:
         pkg_resources.require(dependencies)
         print_green('Your requirements are up to date!')
